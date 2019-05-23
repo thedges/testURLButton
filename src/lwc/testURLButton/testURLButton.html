@@ -1,0 +1,11 @@
+<template>
+    <div class="slds-m-around_medium">
+        <lightning-input type="url" label="Enter a URL" name="inputURL" value={url} onchange={handleURLChange}>
+        </lightning-input>
+        <lightning-radio-group name="radioGroup" label="Radio Group" options={options} value={location} type="radio" onchange={handleLocationChange}>>
+        </lightning-radio-group>
+        <div class="slds-p-top_small">
+            <lightning-button variant="brand" label="Launch URL From LWC" onclick={handleClick}></lightning-button>
+        </div>
+    </div>
+</template>
